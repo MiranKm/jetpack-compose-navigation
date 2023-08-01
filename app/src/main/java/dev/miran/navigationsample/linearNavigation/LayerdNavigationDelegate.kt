@@ -4,7 +4,7 @@ import kotlinx.coroutines.flow.StateFlow
 
 interface LayerdNavigationDelegate: NavigationDelegate {
     val layerdNavigationState: StateFlow<LayerdNavigationState>
-    fun onBackSelected(route:String)
-    fun onNextSelected(route:String)
+    fun onBack(route:String)
+    fun onNext(route:String)
     fun reset()
 }

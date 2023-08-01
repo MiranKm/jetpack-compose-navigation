@@ -19,13 +19,13 @@ class HomeViewModel @Inject constructor() : ViewModel(),
     fun navigateInSeconds(ms: Long) {
         viewModelScope.launch {
             delay(ms)
-            onNextSelected()
+            onNext()
         }
     }
 
     fun navigateInSecondsToRoute(ms: Long, route: String) {
         viewModelScope.launch {
-            onNextSelected(route)
+            onNext(route)
         }
     }
 

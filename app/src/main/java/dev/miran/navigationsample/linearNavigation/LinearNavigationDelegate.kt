@@ -4,7 +4,7 @@ import kotlinx.coroutines.flow.StateFlow
 
 interface LinearNavigationDelegate: NavigationDelegate {
     val navigationState: StateFlow<LinearNavigationState>
-    fun onBackSelected()
-    fun onNextSelected()
+    fun onBack()
+    fun onNext()
     fun resetNavigationState()
 }

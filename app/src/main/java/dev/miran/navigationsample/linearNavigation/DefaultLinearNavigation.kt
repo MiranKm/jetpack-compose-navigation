@@ -11,11 +11,11 @@ class DefaultLinearNavigationDelegate @Inject constructor() : LinearNavigationDe
 
     override val navigationState: StateFlow<LinearNavigationState> = _navigationState
 
-    override fun onBackSelected() {
+    override fun onBack() {
         _navigationState.value = LinearNavigationState.Back
     }
 
-    override fun onNextSelected() {
+    override fun onNext() {
         _navigationState.value = LinearNavigationState.Next
     }
 

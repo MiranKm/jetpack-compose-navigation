@@ -36,7 +36,7 @@ fun HomeScreen(vm: HomeViewModel, navController: NavController) {
             }
 
             Button(onClick = {
-                vm.onNextSelected("details")
+                vm.onNext("details")
             }) {
                 Text("Navigate to  details")
             }

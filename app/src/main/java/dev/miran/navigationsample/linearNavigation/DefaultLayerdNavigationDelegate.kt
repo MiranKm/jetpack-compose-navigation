@@ -10,11 +10,11 @@ class DefaultLayerdNavigationDelegate @Inject constructor() : LayerdNavigationDe
         MutableStateFlow(LayerdNavigationState.Idle)
     override val layerdNavigationState: StateFlow<LayerdNavigationState> = _navigationState
 
-    override fun onBackSelected(route:String) {
+    override fun onBack(route:String) {
         _navigationState.value = LayerdNavigationState.Back(route)
     }
 
-    override fun onNextSelected(route:String) {
+    override fun onNext(route:String) {
         _navigationState.value = LayerdNavigationState.Next(route)
     }
 
